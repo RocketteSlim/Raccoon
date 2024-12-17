@@ -43,16 +43,17 @@ header nav a {
     color: #9f9f9f;
     font-size: large;
     display: block;
-    padding-top: 37.2992px;
-    padding-bottom: 23.6992px;
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-top: 2.3312rem;
+    padding-bottom: 1.4812rem;
+    padding-left: 3.4375rem;
+    padding-right: 3.4375rem;
 }
 
 
-a:hover {
+ header nav a:hover {
     color: #000000;
     border-bottom: 1px solid black;
+    margin: auto;
 }
 
 
@@ -102,6 +103,7 @@ div h2 {
 div p {
     font-size: 16px;
     font-family: "Montserrat-medium";
+    padding-right: 1.875rem;
     line-height: 30px;
     text-align: justify;
 }
@@ -255,13 +257,20 @@ article img {
         z-index: 0;    }
 }
 
-@media screen and (min-width:320px) and (max-width: 558px) {
+@media screen and (max-width: 873px) {
     body{
-        max-width: 558px;
+        max-width: 873px;
+        margin: auto;
+
     }
     header nav{
         flex-direction: column;
         justify-content: center;
+    }
+
+    header nav a{
+        padding-left: 1.0625rem;
+        padding-right: 1.0625rem;
     }
     
     header div{
@@ -276,8 +285,7 @@ article img {
     }
     main{
         max-width: 347px;
-        flex-direction: column;
-        
+        flex-direction: column;        
     }
     article{
         flex-direction: column;
@@ -286,6 +294,7 @@ article img {
     }
     .regroup-article{
         width: 95%;
+        margin: 0 auto;
     }
     .article-content{
         display: flex;
@@ -302,6 +311,7 @@ article img {
         margin-left: -5%;
         white-space: nowrap;
     }
+
     .datetime{
         font-size: 8px;
         margin-right: -5%;
@@ -310,6 +320,9 @@ article img {
     .datetime, .article-info h2{
         margin-top: auto;
         margin-bottom: auto;
+    }
+    div p {
+        padding-right: 0rem;
     }
 
     .footer{
